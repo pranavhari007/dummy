@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #39FF14;
+  --color-primary-hover: #32E612;
+  --color-dark-bg: #0a0f1c;
+  --color-dark-card: #151b2b;
+  --color-dark-border: #1f2937;
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--color-dark-bg)] text-white font-sans antialiased;
+  }
+}
+
+/* Custom utility for the energetic gradient */
+.bg-gradient-energetic {
+  background: linear-gradient(135deg, var(--color-dark-bg) 0%, #0d1b2a 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #fff, var(--color-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
